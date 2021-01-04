@@ -1,0 +1,167 @@
+<section class="hero is-White is-medium is-bold">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <%= image_tag '/assets/welcome/logo.jpg', size: 120 %>
+                    
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li class="is-active"><a>Inicio</a></li>
+                                <li><a href="">Acerca de</a></li>
+                                <li><a href="">Contactanos</a></li>
+                            </ul>
+
+                            <span class="navbar-item">
+                                <a class="button is-primary"
+                                    href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html">
+                                    <span class="icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </span>
+                                    <span title="Hello from the other side">Regístrate</span>
+                                </a>
+                            </span>
+
+                            <span class="navbar-item">
+                                <a class="button is-primary is-outlined"
+                                    href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html">
+                                    <span class="icon">
+                                        <i class="fas fa-sign-in-alt"></i>
+                                    </span>
+                                    <span title="Hello from the other side">Iniciar Sesión</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section>
+    <figure class="image is-2by1">
+        <%= image_tag '/assets/welcome/principalFinal3.png', size: 120 %>
+    </figure>
+</section>
+
+<section>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+
+            </h1>
+            <h2 class="subtitle">
+            </h2>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <div class="columns features">
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image has-text-centered">
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <h4>¿Quienes somos? </h4>
+                        <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec.
+                            Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut
+                            consequat semper viverra nam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image has-text-centered">
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <h4>Misión</h4>
+                        <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed
+                            arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas
+                            cmonsu songue. Phasellus vestibulum lorem
+                            sed risus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="card is-shady">
+                <div class="card-image has-text-centered">
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <h4> Visión</h4>
+                        <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla
+                            pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra
+                            maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro column is-8 is-offset-2">
+    <!--
+        <h2 class="title">Perfect for developers or designers!</h2><br>
+        <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a.
+            Neque egestas congue quisque egestas diam in arcu cursus.</p>
+            -->
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3 is-offset-2">
+                <h2><strong>Contactanos</strong></h2>
+                <ul>
+                    <li><a href="https://goo.gl/maps/sCjVF9JcfT8tZNST8" target="_blank"> <i
+                                class="fas fa-map-marker-alt"></i> Av. Revolución #7513,Nuevo Laredo, Tamps, 88120. </a>
+                    </li>
+
+                    <li><a href="tel:+528671960471"> <i class="fas fa-phone-square-alt"></i> Tel. (867) 196-0471</a>
+                    </li>
+
+                    <li><a href="tel:+528671264856"> <i class="fas fa-phone-square-alt"></i> Tel.Cel. (867) 126-4856</a>
+                    </li>
+
+                    <li><a href="#" target="_blank"> <i class="fas fa-envelope"></i> Envíanos un Correo Electrónico</a>
+                    </li>
+
+                    <li><a href="https://www.facebook.com/exceldental01" target="_blank"> <i
+                                class="fab fa-facebook-square"></i> Vísitanos en Facebook</a></li>
+                </ul>
+            </div>
+            <div class="column is-3">
+                <h2><strong>Horarios</strong></h2>
+            </div>
+
+        </div>
+        <script src="../js/bulma.js"></script>
+</footer>
+
+<script type="text/javascript">
+    (function () {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#' + burger.dataset.target);
+
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+        });
+    })();
+</script>
